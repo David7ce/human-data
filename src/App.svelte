@@ -51,7 +51,7 @@
 
 <div class="board">
   <GlowingCard>
-    <Avatar src="/foto.jpg" alt="Foto de perfil" />
+    <Avatar src="{import.meta.env.BASE_URL}foto.jpg" alt="Foto de perfil" />
     <h2 class="neon-title">Juan Pérez Gómez</h2>
     <div class="id-card">CARNET: 1234-5678-90</div>
 
