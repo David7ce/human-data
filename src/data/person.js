@@ -6,6 +6,7 @@ export const identity = [
   { label: "Fecha de Nacimiento", value: "15/04/2090" },
   { label: "Nacionalidad", value: "Neo Española" },
   { label: "Sexo", value: "Masculino" },
+  { label: "Firma manual", value: "Rúbrica registrada · patrón #FS-2231" },
 ];
 
 export const biometric = [
@@ -14,6 +15,25 @@ export const biometric = [
   { label: "Edad", value: "34 años" },
   { label: "Color de ojos", value: "Azul neón" },
   { label: "Color de cabello", value: "Plata metálico" },
+  { label: "Huella dactilar", value: "Patrón dactilar #4471-B · índice derecho" },
+  { label: "ADN", value: "Perfil genético #GX-88213 · archivado" },
+];
+
+export const personality = [
+  { label: "Descripción", value: "Ingeniero curioso, introvertido, madrugador. Le gusta resolver problemas antes que el café se enfríe." },
+  { label: "Tipo de psicología", value: "INTP · analítico-introvertido" },
+  { label: "Espiritualidad", value: "Agnóstico, practica meditación" },
+  { label: "Intereses", value: "Robótica, astronomía, criptografía" },
+  { label: "Hobbies", value: "Ajedrez, ciclismo urbano, sintetizadores" },
+  { label: "Música favorita", value: "Synthwave, IDM" },
+  { label: "Clasificación", value: "Techie discreto (no hippie, no pijo, no choni, no gangster)" },
+];
+
+export const family = [
+  { label: "Pareja", value: "María Pérez" },
+  { label: "Hijos", value: "1 (Lucía, 6 años)" },
+  { label: "Familia", value: "Padres residentes en Valencia · 1 hermano" },
+  { label: "Mascotas", value: "Gato · \"Pixel\", 3 años" },
 ];
 
 export const health = [
@@ -25,11 +45,19 @@ export const health = [
   { label: "Contacto médico", value: "Dra. Ana Ruiz · +34 600 111 222" },
 ];
 
+export const work = [
+  { label: "Trabajo actual", value: "Ingeniero de Software Senior" },
+  { label: "Empleador", value: "Neo Corp" },
+  { label: "Curriculum Vitae", value: "12 años exp. · Ing. Informática (UPV) · CV-2026.pdf" },
+];
+
 export const finance = [
   { label: "DNI", value: "12345678-X · válido hasta 2030" },
   { label: "Pasaporte", value: "AB1234567 · válido hasta 2032" },
   { label: "Licencia de conducir", value: "Clase B · válida hasta 2029" },
   { label: "IBAN", value: "ES91 2100 •••• •••• •••• 0123" },
+  { label: "Datos bancarios", value: "Cuenta corriente · saldo •••• 42.000 € · Banco Neo" },
+  { label: "Bienes inmuebles", value: "Piso en Madrid (propietario) · Trastero" },
   { label: "Seguro médico", value: "Póliza #98234 · Sanitas" },
 ];
 
@@ -42,7 +70,6 @@ export const contacts = [
 export const location = [
   { label: "Ubicación actual", value: "Madrid, España" },
   { label: "Última actividad", value: "Hoy, 14:32" },
-  { label: "Empleador", value: "Neo Corp · Ingeniero de Software" },
 ];
 
 export const social = [
