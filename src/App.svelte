@@ -49,10 +49,13 @@
     <Section title="DATOS PERSONALES" items={person.identity} />
     <Section title="DATOS BIOMÉTRICOS" items={person.biometric} />
     <Section title="PERFIL Y PERSONALIDAD" items={person.personality} />
+    <Section title="COMPORTAMIENTO Y ENTRENAMIENTO" items={person.behavior} />
+    <Section title="MEMORIA Y BIOGRAFÍA" items={person.biography} />
     <Section title="FAMILIA" items={person.family} />
     <Section title="SALUD" items={person.health} />
     <Section title="TRABAJO" items={person.work} />
     <Section title="DOCUMENTOS Y FINANZAS" items={person.finance} />
+    <Section title="DATOS SENSIBLES" items={person.sensitive} />
     <Section title="CONTACTOS" items={person.contacts} />
     <Section title="UBICACIÓN Y ACTIVIDAD" items={person.location} />
     <Section title="REDES SOCIALES" items={person.social} />

@@ -17,6 +17,33 @@ export const biometric = [
   { label: "Color de cabello", value: "Plata metálico" },
   { label: "Huella dactilar", value: "Patrón dactilar #4471-B · índice derecho" },
   { label: "ADN", value: "Perfil genético #GX-88213 · archivado" },
+  { label: "Huella de voz", value: "Patrón vocal #V-3390 · verificado" },
+  { label: "Escaneo retina/iris", value: "Iris dcho/izdo escaneados · ID-RET-5521" },
+  { label: "Mapa facial 3D", value: "Malla facial 3D · 68 puntos de referencia" },
+  { label: "Patrón de marcha", value: "Marcha caracterizada · sensor #GA-114" },
+  { label: "Marcas distintivas", value: "Cicatriz pequeña en ceja izquierda · lunar en antebrazo derecho" },
+];
+
+export const behavior = [
+  { label: "Muestras de escritura", value: "Corpus de texto personal · 40.000 palabras analizadas" },
+  { label: "Grabaciones de voz", value: "12h de audio etiquetado · uso en modelo de voz" },
+  { label: "Historial de decisiones", value: "Registro de decisiones clave, 2015-2026" },
+  { label: "Rutina diaria", value: "Despierta 6:00 · trabaja 8-17h · gimnasio 18:00 · lee antes de dormir" },
+  { label: "Patrón de sueño", value: "6.5h promedio · fase REM estable · sin apnea" },
+  { label: "Hábitos de consumo", value: "Compras online semanales · prefiere marcas tech y libros técnicos" },
+];
+
+export const biography = [
+  { label: "Autobiografía", value: "Línea de tiempo vital archivada · 34 años documentados" },
+  { label: "Genoma completo", value: "Secuencia completa · 3.200 millones de pares de bases · ref #GEN-90114" },
+  { label: "Idiomas", value: "Español (nativo), Inglés (C1), Japonés (A2)" },
+  { label: "Relaciones sociales", value: "3 amigos cercanos · ex-pareja (Laura G.) · mentor universitario" },
+];
+
+export const sensitive = [
+  { label: "Orientación sexual", value: "Heterosexual" },
+  { label: "Ideología política", value: "Centro-progresista, no afiliado" },
+  { label: "Antecedentes penales", value: "Ninguno" },
 ];
 
 export const personality = [
