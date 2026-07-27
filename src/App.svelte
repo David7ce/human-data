@@ -16,10 +16,9 @@
   }
 
   .board {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    max-width: 760px;
     margin: 0 auto;
   }
 
@@ -49,17 +48,11 @@
 
     <Section title="DATOS PERSONALES" items={person.identity} />
     <Section title="DATOS BIOMÉTRICOS" items={person.biometric} />
-  </GlowingCard>
-
-  <GlowingCard>
+    <Section title="PERFIL Y PERSONALIDAD" items={person.personality} />
+    <Section title="FAMILIA" items={person.family} />
     <Section title="SALUD" items={person.health} />
-  </GlowingCard>
-
-  <GlowingCard>
+    <Section title="TRABAJO" items={person.work} />
     <Section title="DOCUMENTOS Y FINANZAS" items={person.finance} />
-  </GlowingCard>
-
-  <GlowingCard>
     <Section title="CONTACTOS" items={person.contacts} />
     <Section title="UBICACIÓN Y ACTIVIDAD" items={person.location} />
     <Section title="REDES SOCIALES" items={person.social} />
