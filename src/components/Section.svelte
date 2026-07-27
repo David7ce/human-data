@@ -1,18 +1,37 @@
 <script>
   export let title = "";
   export let items = [];
+
+  let open = false;
 </script>
 
 <style>
   .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ff00ff;
+    margin: 0 0 12px;
+    padding: 0 0 6px;
+    font: inherit;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 3px;
-    margin-bottom: 12px;
+    text-align: left;
     color: #ff00ff;
-    border-bottom: 2px solid #ff00ff;
-    padding-bottom: 6px;
     text-shadow: 0 0 10px #ff00ff;
+    cursor: pointer;
+  }
+  .arrow {
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  .arrow.open {
+    transform: rotate(90deg);
   }
   ul {
     list-style: none;
@@ -43,10 +62,20 @@
 </style>
 
 <section>
-  <div class="section-title">{title}</div>
-  <ul>
-    {#each items as item}
-      <li><span>{item.label}:</span> {item.value}</li>
-    {/each}
-  </ul>
+  <button
+    type="button"
+    class="section-title"
+    aria-expanded={open}
+    on:click={() => (open = !open)}
+  >
+    {title}
+    <span class="arrow" class:open>▸</span>
+  </button>
+  {#if open}
+    <ul>
+      {#each items as item}
+        <li><span>{item.label}:</span> {item.value}</li>
+      {/each}
+    </ul>
+  {/if}
 </section>
