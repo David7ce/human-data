@@ -38,6 +38,15 @@
     color: #ff00ff;
     text-shadow: 0 0 6px #ff00ff;
   }
+  .group-title {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0;
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+  }
 </style>
 
 <div class="board">
@@ -46,18 +55,29 @@
     <h2 class="neon-title">Juan Pérez Gómez</h2>
     <div class="id-card">CARNET: 1234-5678-90</div>
 
-    <Section title="DATOS PERSONALES" items={person.identity} />
+    <div class="group-title">BIOMÉTRICO Y SALUD</div>
     <Section title="DATOS BIOMÉTRICOS" items={person.biometric} />
-    <Section title="PERFIL Y PERSONALIDAD" items={person.personality} />
-    <Section title="COMPORTAMIENTO Y ENTRENAMIENTO" items={person.behavior} />
-    <Section title="MEMORIA Y BIOGRAFÍA" items={person.biography} />
-    <Section title="FAMILIA" items={person.family} />
     <Section title="SALUD" items={person.health} />
-    <Section title="TRABAJO" items={person.work} />
-    <Section title="DOCUMENTOS Y FINANZAS" items={person.finance} />
-    <Section title="DATOS SENSIBLES" items={person.sensitive} />
+
+    <div class="group-title">IDENTIDAD Y DOCUMENTOS</div>
     <Section title="CONTACTOS" items={person.contacts} />
-    <Section title="UBICACIÓN Y ACTIVIDAD" items={person.location} />
+    <Section title="DATOS PERSONALES" items={person.identity} />
+    <Section title="DOCUMENTOS Y FINANZAS" items={person.finance} />
+
+    <div class="group-title">PRESENCIA DIGITAL</div>
     <Section title="REDES SOCIALES" items={person.social} />
+    <Section title="UBICACIÓN Y ACTIVIDAD" items={person.location} />
+
+    <div class="group-title">PSICOLOGÍA Y COMPORTAMIENTO</div>
+    <Section title="COMPORTAMIENTO Y ENTRENAMIENTO" items={person.behavior} />
+    <Section title="DATOS SENSIBLES" items={person.sensitive} />
+    <Section title="PERFIL Y PERSONALIDAD" items={person.personality} />
+
+    <div class="group-title">VIDA PERSONAL</div>
+    <Section title="FAMILIA" items={person.family} />
+    <Section title="MEMORIA Y BIOGRAFÍA" items={person.biography} />
+
+    <div class="group-title">VIDA PROFESIONAL</div>
+    <Section title="TRABAJO" items={person.work} />
   </GlowingCard>
 </div>

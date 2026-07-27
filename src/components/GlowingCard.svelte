@@ -23,6 +23,7 @@
   .card::after {
     content: "";
     position: absolute;
+    pointer-events: none;
     border: 1.5px solid #ff00ff;
     border-radius: 12px;
     top: -12px;
